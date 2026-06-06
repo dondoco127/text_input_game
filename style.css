@@ -1,0 +1,65 @@
+        /* 1. 全体デザイン */
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f5;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 2. 情報表示エリア */
+        .info {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        /* 3. ワード表示エリア */
+        #wordDisplay {
+            min-height: 80px;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+            font-size: 2.2em;
+            text-align: left;
+            user-select: none; /* テキスト選択を無効化 */
+        }
+        
+        /* 4. 入力・判定のスタイル */
+        .correct {
+            color: #4CAF50; /* 緑 */
+        }
+
+        .current {
+            text-decoration: underline; /* 次に入力すべき文字に下線 */
+        }
+
+        /* 5. ボタン */
+        #startButton {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #typingInput {
+            /* 画面に表示しない（裏側でキー入力を処理する） */
+            position: absolute; 
+            left: -9999px; 
+            opacity: 0;
+        }

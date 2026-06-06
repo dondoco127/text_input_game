@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タイピングゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>シンプルタイピングゲーム</h1>
+        
+        <div class="info">
+            <div id="timerDisplay">残り時間: 30秒</div>
+            <div id="scoreDisplay">スコア: 0</div>
+        </div>
+
+        <div id="wordDisplay">
+            スタートボタンを押すか、Enterキーを押してください
+        </div>
+        
+        <button id="startButton">ゲームスタート</button>
+
+        <input type="text" id="typingInput" disabled>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
